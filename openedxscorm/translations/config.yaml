@@ -1,0 +1,7 @@
+locales:
+    - en  # English - Source Language
+    - ar  # Arabic
+
+generate_merge:
+    text.po:
+        - django-partial.po
