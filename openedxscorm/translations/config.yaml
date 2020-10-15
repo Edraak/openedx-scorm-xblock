@@ -3,5 +3,5 @@ locales:
     - ar  # Arabic
 
 generate_merge:
-    text.po:
+    django.po:
         - django-partial.po

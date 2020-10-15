@@ -2,113 +2,106 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Abdalrahim Fakhouri <abdilra7eem@yahoo.com>, 2020
-# Omar Al-Ithawi <omar.al.dolaimy@gmail.com>, 2020
-# Omar Al-Ithawi <i@omardo.com>, 2020
-# Shadi Naif <shadinaif@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-14 22:30+0300\n"
-"PO-Revision-Date: 2020-10-14 15:34+0000\n"
-"Last-Translator: Shadi Naif <shadinaif@gmail.com>, 2020\n"
-"Language-Team: Arabic (https://www.transifex.com/edraak/teams/27178/ar/)\n"
+"POT-Creation-Date: 2020-10-16 00:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: scormxblock.py
 msgid "Display Name"
-msgstr "الاسم الظاهِر"
+msgstr ""
 
 #: scormxblock.py
 msgid "Display name for this module"
-msgstr "الاسم الظاهِر لهذه الوحدة"
+msgstr ""
 
 #: scormxblock.py
 msgid "Path to the index page in scorm file"
-msgstr "مسار صفحة index لملف السكورم"
+msgstr ""
 
 #: scormxblock.py
 msgid "Weight"
-msgstr "الوزن"
+msgstr ""
 
 #: scormxblock.py
 msgid "Weight/Maximum grade"
-msgstr "الوزن/أعلى درجة"
+msgstr ""
 
 #: scormxblock.py
 msgid "Scored"
-msgstr "مُصَحَّح"
+msgstr ""
 
 #: scormxblock.py
 msgid ""
 "Select False if this component will not receive a numerical score from the "
 "Scorm"
-msgstr "اختر خطأ إذا كانت هذه الكينونة لا تستقبل علامات رقمية من سكورم"
+msgstr ""
 
 #: scormxblock.py
 msgid "Display width (px)"
-msgstr "عرض الصفحة بالنقطة (px)"
+msgstr ""
 
 #: scormxblock.py
 msgid "Width of iframe (default: 100%)"
-msgstr "عرض iframe (الافتراضي: 100%)"
+msgstr ""
 
 #: scormxblock.py
 msgid "Display height (px)"
-msgstr "ارتفاع الصفحة بالنقطة (px)"
+msgstr ""
 
 #: scormxblock.py
 msgid "Height of iframe"
-msgstr "ارتفاع iframe"
+msgstr ""
 
 #: scormxblock.py
 msgid "Fullscreen on launch"
-msgstr "البدء بملء الشاشة"
+msgstr ""
 
 #: scormxblock.py
 msgid "Display in fullscreen mode on launch"
-msgstr "العرض بخاصية ملء الشاشة عند البدء"
+msgstr ""
 
 #: static/html/scormxblock.html
 msgid "points"
-msgstr "نقاط"
+msgstr ""
 
 #: static/html/scormxblock.html
 msgid "Fullscreen"
-msgstr "ملء الشاشة"
+msgstr ""
 
 #: static/html/scormxblock.html
 msgid "Exit fullscreen"
-msgstr "الخروج من ملء الشاشة"
+msgstr ""
 
 #: static/html/studio.html
 msgid "Upload .zip package"
-msgstr "رفع ملف zip مضغوط"
+msgstr ""
 
 #: static/html/studio.html
 msgid "Currently:"
-msgstr "حالياً:"
+msgstr ""
 
 #: static/html/studio.html
 msgid "True"
-msgstr "صواب"
+msgstr ""
 
 #: static/html/studio.html
 msgid "False"
-msgstr "خطأ"
+msgstr ""
 
 #: static/html/studio.html
 msgid "Save"
-msgstr "احفَظ"
+msgstr ""
 
 #: static/html/studio.html
 msgid "Cancel"
-msgstr "الغِ"
+msgstr ""

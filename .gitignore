@@ -47,6 +47,7 @@ coverage.xml
 
 # Translations
 *.pot
+openedxscorm/translations/en/LC_MESSAGES/django-partial.*
 
 # Django stuff:
 *.log
