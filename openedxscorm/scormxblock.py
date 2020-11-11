@@ -6,6 +6,7 @@ import re
 import xml.etree.ElementTree as ET
 import zipfile
 
+from django.conf import settings
 from django.core.files import File
 from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
@@ -294,7 +295,12 @@ class ScormXBlock(XBlock):
             # is stored in the base folder.
             folder = self.extract_folder_base_path
             logger.warning("Serving SCORM content from old-style path: %s", folder)
-        return self.storage.url(os.path.join(folder, self.index_page_path))
+
+        # Hack to always use SITE_NAME. Its to avoid CORS issues, redirection is handled in the load balancer
+        result = self.storage.url(os.path.join(folder, self.index_page_path))
+        result = re.sub(r'(https*://)([\.\w-]*)', r'\1' + settings.SITE_NAME, result)
+
+        return result
 
     @property
     def package_path(self):
