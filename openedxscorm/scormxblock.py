@@ -332,6 +332,8 @@ class ScormXBlock(XBlock):
 
     @XBlock.json_handler
     def scorm_get_value(self, data, _suffix):
+        logger.info('shadinaif-----------scorm_get_value------------')
+        logger.info('shadinaif-----------data------------{}'.format(data))
         name = data.get("name")
         if name in ["cmi.core.lesson_status", "cmi.completion_status"]:
             return {"value": self.lesson_status}
@@ -343,6 +345,8 @@ class ScormXBlock(XBlock):
 
     @XBlock.json_handler
     def scorm_set_value(self, data, _suffix):
+        logger.info('shadinaif-----------scorm_set_value------------')
+        logger.info('shadinaif-----------data------------{}'.format(data))
         context = {"result": "success"}
         name = data.get("name")
 
@@ -378,18 +382,27 @@ class ScormXBlock(XBlock):
         )
 
     def get_grade(self):
+        logger.info('shadinaif-----------get_grade------------')
         lesson_score = self.lesson_score
         if self.lesson_status == "failed" or (
             self.scorm_version == "SCORM_2004"
             and self.success_status in ["failed", "unknown"]
         ):
             lesson_score = 0
+        logger.info('shadinaif-----------lesson_score = {}'.format(lesson_score))
+        logger.info('shadinaif-----------self.weight = {}'.format(self.weight))
+        logger.info('shadinaif-----------get_grade = {}'.format(lesson_score * self.weight))
         return lesson_score * self.weight
 
     def set_score(self, score):
         """
         Utility method used to rescore a problem.
         """
+        logger.info('shadinaif-----------set_score------------')
+        logger.info('shadinaif-----------score = {}'.format(score))
+        logger.info('shadinaif-----------score.raw_earned  = {}'.format(score.raw_earned ))
+        logger.info('shadinaif-----------self.weight = {}'.format(self.weight))
+        logger.info('shadinaif----------new-self.lesson_score = {}'.format(self.lesson_score))
         self.lesson_score = score.raw_earned / self.weight
 
     def max_score(self):
